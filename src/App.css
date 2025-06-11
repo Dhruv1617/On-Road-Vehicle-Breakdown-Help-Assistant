@@ -1,0 +1,129 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.landing-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/car.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.login-page, .register-page {
+  background: linear-gradient(135deg, rgba(26, 115, 232, 0.1), rgba(0, 48, 135, 0.1)), url('./assets/images/map-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.dashboard-page {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), url('./assets/images/road-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh; /* Added: Ensure full viewport height */
+  display: flex; /* Added: Center form */
+  flex-direction: column; /* Added */
+  justify-content: center; /* Added: Center vertically */
+  align-items: center; /* Added: Center horizontally */
+}
+
+/* Hero section for Landing */
+.hero {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.hero .btn {
+  margin: 8px;
+}
+
+/* Form styles */
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form input, .form textarea {
+  background-color: #ffffff;
+}
+
+.form .error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Mechanic list */
+.mechanic-list {
+  max-width: 800px;
+  margin: 24px auto;
+}
+
+.mechanic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mechanic-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.mechanic-address, .mechanic-phone {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Page title */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 16px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
